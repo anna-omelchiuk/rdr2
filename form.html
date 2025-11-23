@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення покупки — RDR2</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="logo">RDR2</div>
+            <nav>
+                <ul>
+                   <li><a href="index.html">Головна</a></li>
+                    <li><a href="description.html">Опис</a></li>
+                    <li><a href="characters.html">Персонажі</a></li>
+                    <li><a href="screenshots.html">Скріншоти</a></li>
+                    <li><a href="system.html">Системні вимоги</a></li>
+                    <li><a href="form.html" class="active">Купити</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="purchase-section">
+        <div class="purchase-form-container">
+            <h1 class="form-title">Оформлення покупки</h1>
+            
+            <form class="purchase-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Ім'я користувача</label>
+                    <input type="text" id="username" name="username" placeholder="Введіть ваше ім'я та прізвище" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment">Спосіб оплати</label>
+                    <select id="payment" name="payment" required>
+                        <option value="" disabled selected>Оберіть спосіб оплати</option>
+                        <option value="monobank">Monobank</option>
+                        <option value="privatbank">PrivatBank</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="visa">Visa / Mastercard</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="steam">Посилання на профіль Steam</label>
+                    <input type="text" id="steam" name="steam" placeholder="Введіть акаунт" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Купити</button>
+            </form>
+
+            <p class="form-footer">
+                Натискаючи «Купити», ви погоджуєтесь з <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">умовами використання</a>.
+            </p>
+        </div>
+    </section>
+ <footer>
+        <div class="container footer-inner">
+            <div>© 2025 RDR II Fan Page.</div>
+        </div>
+    </footer>
+</body>
+</html>
